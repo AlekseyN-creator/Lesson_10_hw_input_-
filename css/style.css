@@ -1,0 +1,174 @@
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-SemiBold.woff2") format("woff2"), url("../fonts/Gilroy-SemiBold.woff") format("woff");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* Обнуляющие стили */
+/* убираем отступы внеш/внут, рамки
+ и прибавление рамок */
+*,
+::before,
+::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: 0;
+}
+/* убираем декорацию у пунктов списка */
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+/* убираем декорацию ссылок 
+при наведении */
+a:hover {
+	text-decoration: none;
+}
+/* обнуляем заголовки */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-style: inherit;
+}
+/* убираем фантомный отступ у картинки */
+img {
+	vertical-align: top;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+body {
+	line-height: 1;
+	color: black;
+	font-family: "Gilroy", sans-serif;
+	padding: 10px;
+	background-color: #000000;
+}
+/* обнуляем кнопки */
+
+button {
+	cursor: pointer;
+	background-color: transparent;
+}
+/* Поля, кнопки, текст ареа наследуют шрифт*/
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+/* Обнуляющие стили закончились */
+/* ================================ */
+
+.form {
+	max-width: 384px;
+	margin: 0px auto;
+}
+.text {
+	color: #fff;
+	text-align: center;
+	font-weight: 700;
+	margin: 0px 0px 41px 0px;
+	font-size: 38px;
+	line-height: 46px;
+}
+
+.form__line {
+	width: 100%;
+}
+
+.form__input {
+	width: 90%;
+	margin: 0px 0px 30px 0px;
+}
+
+.form__label {
+	font-weight: 700;
+}
+
+.input {
+	padding-left: 20px;
+	font-weight: 400;
+	border-radius: 5px;
+	width: 364px;
+	height: 50px;
+}
+.checkbox {
+	cursor: pointer;
+	color: #fff;
+	font-weight: 500;
+}
+.checkbox__label {
+	font-size: 18px;
+	line-height: 21px;
+	cursor: pointer;
+}
+.checkbox__input {
+	border-radius: 5px;
+	cursor: pointer;
+}
+span {
+	padding-left: 45px;
+	color: #64b369;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21.19px;
+}
+.button {
+	margin: 0px auto;
+	color: white;
+	background-color: #337ab7;
+	width: 384px;
+	height: 50px;
+	border-radius: 5px;
+	font-weight: 700;
+	font-size: 24px;
+	cursor: pointer;
+}
+.button:focus {
+	outline: none;
+}
+.button:active {
+	box-shadow: inset 0px 0px 15px 5px black;
+	background-color: #044c8a;
+}
